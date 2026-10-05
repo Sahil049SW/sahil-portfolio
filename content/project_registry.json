@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "slug": "ai-agent-control-plane",
+      "title": "AI Agent Control Plane",
+      "type": "Personal engineering project",
+      "status": "Prototype / active engineering work",
+      "featured": true,
+      "truthLabel": "Personal project"
+    },
+    {
+      "slug": "customer-follow-up-workflow",
+      "title": "Customer Follow-Up & Review Workflow",
+      "type": "Business automation demo",
+      "status": "Prototype",
+      "featured": true,
+      "truthLabel": "Prototype — no client relationship claimed"
+    },
+    {
+      "slug": "enterprise-backend-engineering",
+      "title": "Enterprise Backend Engineering",
+      "type": "Professional case study",
+      "status": "Experience-backed",
+      "featured": true,
+      "truthLabel": "Professional experience"
+    },
+    {
+      "slug": "spreadsheet-workflow-automation",
+      "title": "Spreadsheet / Data Workflow Automation",
+      "type": "Automation demo",
+      "status": "Prototype",
+      "featured": true,
+      "truthLabel": "Prototype"
+    }
+  ]
+}
