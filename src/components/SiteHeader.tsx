@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { site } from "@/config/site";
+import { ExternalLink } from "@/components/ExternalLink";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Wordmark } from "@/components/Wordmark";
 
@@ -57,6 +58,12 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
+          <ExternalLink target={site.github} className="text-sm text-fg-muted transition-colors hover:text-fg">
+            GitHub
+          </ExternalLink>
+          <ExternalLink target={site.linkedin} className="text-sm text-fg-muted transition-colors hover:text-fg">
+            LinkedIn
+          </ExternalLink>
           <ThemeToggle />
           <Link
             href="/#contact"
@@ -101,6 +108,20 @@ export function SiteHeader() {
                 {link.label}
               </Link>
             ))}
+            <ExternalLink
+              target={site.github}
+              onClick={() => setOpen(false)}
+              className="border-b border-border py-3 text-base text-fg"
+            >
+              GitHub
+            </ExternalLink>
+            <ExternalLink
+              target={site.linkedin}
+              onClick={() => setOpen(false)}
+              className="border-b border-border py-3 text-base text-fg"
+            >
+              LinkedIn
+            </ExternalLink>
             <Link
               href="/#contact"
               onClick={() => setOpen(false)}

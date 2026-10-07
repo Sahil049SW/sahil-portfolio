@@ -9,7 +9,7 @@ export const site = {
   positioning: "Senior Backend Engineer + AI Automation Builder",
   email: "swainsahil079@gmail.com", // Source: résumé (public site configuration)
   linkedin: externalLink("https://www.linkedin.com/in/sahil-swain-687a73285/"),
-  github: externalLink("https://github.com/Sahil049SW"),
+  github: externalLink("https://github.com/Sahil049SW/sahil-portfolio"),
   domain: "sahil-portfolio-14d.pages.dev" as string | null, // deployment metadata configuration — current production origin; custom domain still open
 } as const;
 
