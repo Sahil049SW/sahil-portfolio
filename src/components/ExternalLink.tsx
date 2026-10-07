@@ -4,13 +4,14 @@ interface ExternalLinkProps {
   target: ExternalLinkTarget;
   children: React.ReactNode;
   className?: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
 
 /**
  * External link with explicit availability state. Missing URLs stay disabled,
  * and usable URLs can only be created through the HTTPS validator.
  */
-export function ExternalLink({ target, children, className }: ExternalLinkProps) {
+export function ExternalLink({ target, children, className, onClick }: ExternalLinkProps) {
   if (target.kind === "placeholder") {
     return (
       <span
@@ -25,7 +26,7 @@ export function ExternalLink({ target, children, className }: ExternalLinkProps)
   }
 
   return (
-    <a href={target.href} target="_blank" rel="noopener noreferrer" className={className}>
+    <a href={target.href} target="_blank" rel="noopener noreferrer" className={className} onClick={onClick}>
       {children}
     </a>
   );
